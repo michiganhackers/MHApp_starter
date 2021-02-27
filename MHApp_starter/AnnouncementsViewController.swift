@@ -30,24 +30,41 @@
  */
 
 import UIKit
+import WebKit
 
-class AnnouncementsViewController: UIViewController {
+class AnnouncementsViewController: UIViewController, WKUIDelegate {
 
+    
+    var webView: WKWebView!
+
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let announcementURLString = createURLStringFromDate(date: formatLastSundayDate())
+        let announcementURL = URL(string:announcementURLString)
+        let announcementURLRequest = URLRequest(url: announcementURL!)
+        
+        webView.load(announcementURLRequest)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func formatLastSundayDate () -> String {
+        let lastSunday: Date = Date.today().previous(Date.Weekday.sunday);
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        let lastSundayFormatted = dateFormatter.string(from: lastSunday)
+        
+        return lastSundayFormatted
     }
-    */
-
+    
+    func createURLStringFromDate(date: String) -> String{
+        let baseURL = "https://michiganhackers.github.io/mh-ios-app-backend/announcements/"
+        return baseURL + date
+    }
 }

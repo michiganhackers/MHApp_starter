@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C323CECF25EAED5500CA62F3 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CECE25EAED5500CA62F3 /* DateExtention.swift */; };
 		C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */; };
 		C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */; };
 		C54C1C6725E6F572008EDC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C1C6525E6F572008EDC59 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C323CECE25EAED5500CA62F3 /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
 		C54C1C5C25E6F572008EDC59 /* MHApp_starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHApp_starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C323CED125EAF2FE00CA62F3 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C323CECE25EAED5500CA62F3 /* DateExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		C54C1C5325E6F572008EDC59 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 				C54C1C6D25E6F573008EDC59 /* LaunchScreen.storyboard */,
 				C54C1C7025E6F573008EDC59 /* Info.plist */,
 				C54C1C6825E6F572008EDC59 /* MHApp_starter.xcdatamodeld */,
+				C323CED125EAF2FE00CA62F3 /* Extentions */,
 			);
 			path = MHApp_starter;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 			files = (
 				C54C1C7825E71101008EDC59 /* HomeViewController.swift in Sources */,
 				C54C1C6A25E6F572008EDC59 /* MHApp_starter.xcdatamodeld in Sources */,
+				C323CECF25EAED5500CA62F3 /* DateExtention.swift in Sources */,
 				C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */,
 				C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */,
 				C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */,
