@@ -42,6 +42,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="w5E-eK-4Qm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2dD-T1-xdz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -99,12 +100,17 @@
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HackersLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-EA-rw9">
+                                <rect key="frame" x="114" y="104" width="186" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dLs-vP-mu9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="fl8-QD-4fa"/>
                     <connections>
+                        <outlet property="Logo" destination="bdA-EA-rw9" id="1OA-vv-L1N"/>
                         <outlet property="titleLabel" destination="hw4-5G-Glu" id="15t-mc-ZxM"/>
                     </connections>
                 </viewController>
@@ -139,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HackersLogo" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
