@@ -16,28 +16,85 @@
     - Be creative! Play around with settings such as colors, font sizes, and alignment
  */
 
+//import UIKit
+//
+//class CalendarViewController: UIViewController {
+//    // an IBOutlet to the title UILabel. Basically a
+//    // referencable variable for the CalendarViewController class
+//    @IBOutlet weak var titleLabel: UILabel!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
+//    
+//
+//
+//    /*
+//    // MARK: - Navigation
+//
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//    }
+//    */
+//
+//}
+
 import UIKit
 
+enum MyTheme {
+    case light
+    case dark
+}
+
 class CalendarViewController: UIViewController {
-    // an IBOutlet to the title UILabel. Basically a
-    // referencable variable for the CalendarViewController class
-    @IBOutlet weak var titleLabel: UILabel!
+    
+    //@IBOutlet weak var titleLabel: UILabel!
+    
+    var theme = MyTheme.dark
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "My Calender"
+        self.navigationController?.navigationBar.isTranslucent=false
+        self.view.backgroundColor=Style.bgColor
+        
+        view.addSubview(calenderView)
+        calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive=true
+        calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
+        calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
+        calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
+        
+        let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
+        self.navigationItem.rightBarButtonItem = rightBarBtn
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        calenderView.myCollectionView.collectionViewLayout.invalidateLayout()
     }
-    */
-
+    
+    @objc func rightBarBtnAction(sender: UIBarButtonItem) {
+        if theme == .dark {
+            sender.title = "Dark"
+            theme = .light
+            Style.themeLight()
+        } else {
+            sender.title = "Light"
+            theme = .dark
+            Style.themeDark()
+        }
+        self.view.backgroundColor=Style.bgColor
+        calenderView.changeTheme()
+    }
+    
+    let calenderView: CalenderView = {
+        let v=CalenderView(theme: MyTheme.dark)
+        v.translatesAutoresizingMaskIntoConstraints=false
+        return v
+    }()
+    
 }
