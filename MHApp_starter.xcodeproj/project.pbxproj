@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A9A8D426042719008433DD /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9A8D326042719008433DD /* NSAttributedStringExtension.swift */; };
 		C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */; };
 		C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */; };
 		C54C1C6725E6F572008EDC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C1C6525E6F572008EDC59 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95A9A8D326042719008433DD /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		C54C1C5C25E6F572008EDC59 /* MHApp_starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHApp_starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */,
 				C54C1C6525E6F572008EDC59 /* Main.storyboard */,
 				C54C1C7725E71101008EDC59 /* HomeViewController.swift */,
+				95A9A8D326042719008433DD /* NSAttributedStringExtension.swift */,
 				C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */,
 				C54C1C8725E71300008EDC59 /* CalendarViewController.swift */,
 				C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */,
@@ -158,6 +161,7 @@
 				C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */,
 				C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */,
 				C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */,
+				95A9A8D426042719008433DD /* NSAttributedStringExtension.swift in Sources */,
 				C54C1C7E25E71149008EDC59 /* TeamsViewController.swift in Sources */,
 				C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */,
 			);

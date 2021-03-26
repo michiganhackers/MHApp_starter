@@ -72,18 +72,50 @@
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-iB-wRb">
+                                <rect key="frame" x="20" y="104" width="374" height="709"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="m5T-fi-GsJ" detailTextLabel="tOn-jg-kM9" style="IBUITableViewCellStyleSubtitle" id="VYe-zG-dYf">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VYe-zG-dYf" id="8KI-FA-7do">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m5T-fi-GsJ">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tOn-jg-kM9">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T8r-0Y-6mY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Teams" id="854-PE-pcP"/>
                     <connections>
+                        <outlet property="tableView" destination="nkK-iB-wRb" id="ozb-0Y-aSq"/>
                         <outlet property="titleLabel" destination="YhL-nd-w1o" id="6zL-rk-rLC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Th6-NE-M9t" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="805"/>
+            <point key="canvasLocation" x="-462.31884057971018" y="804.91071428571422"/>
         </scene>
         <!--Home-->
         <scene sceneID="jOS-Ah-arj">
@@ -104,6 +136,26 @@
                                 <rect key="frame" x="114" y="104" width="186" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4F-lu-ryV">
+                                <rect key="frame" x="20" y="256" width="374" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">
+Michigan Hackers is a community where passionate students can build and grow relevant skills in a technological and fast-paced world. 
+Our end goal is to provide high quality resources for any and all students to become more competent members of society (technically, socially, and professionally) with a computer science twist. While connecting students to projects, skills, faculty, companies, and more, we hope to make a large university feel smaller and forge lifelong bonds in an inclusive environment while also bridging passionate people together.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Meetings Every Thursday 7:00 - 8:30 PM" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sRE-w9-fb2">
+                                <rect key="frame" x="49" y="612" width="317" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dLs-vP-mu9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -111,7 +163,9 @@
                     <tabBarItem key="tabBarItem" title="Home" id="fl8-QD-4fa"/>
                     <connections>
                         <outlet property="Logo" destination="bdA-EA-rw9" id="1OA-vv-L1N"/>
+                        <outlet property="mainText" destination="x4F-lu-ryV" id="A1s-mi-GbP"/>
                         <outlet property="titleLabel" destination="hw4-5G-Glu" id="15t-mc-ZxM"/>
+                        <outlet property="zoomLink" destination="sRE-w9-fb2" id="9Jt-Fm-Wrs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYG-KS-Ewg" sceneMemberID="firstResponder"/>
@@ -146,6 +200,9 @@
     </scenes>
     <resources>
         <image name="HackersLogo" width="200" height="200"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
