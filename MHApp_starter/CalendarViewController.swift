@@ -20,12 +20,13 @@ import UIKit
 
 class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
          let cell=tableView.dequeueReusableCell(withIdentifier: "calendarCell", for: indexPath)
-        cell.textLabel?.text = "sunday"
+        cell.textLabel?.text = days[indexPath.row]
         return cell
     }
     
@@ -37,7 +38,6 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var testingLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        testingLabel.text = "hello"
         testingTableView.dataSource = self
         testingTableView.delegate = self
         
