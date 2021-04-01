@@ -75,7 +75,7 @@ class HomeViewController: UIViewController {
         Instagram.attributedText = attributedString
         Instagram.font = font
         Instagram.textColor = frontColor
-        Instagram.linkTextAttributes = [.foregroundColor : UIColor.red]
+        Instagram.linkTextAttributes = [.foregroundColor : UIColor.blue]
     }
 
     func updateTwitter(){
@@ -88,7 +88,7 @@ class HomeViewController: UIViewController {
         Twitter.attributedText = attributedString
         Twitter.font = font
         Twitter.textColor = frontColor
-        Twitter.linkTextAttributes = [.foregroundColor : UIColor.red]
+        Twitter.linkTextAttributes = [.foregroundColor : UIColor.blue]
         
     }
     
@@ -101,7 +101,7 @@ class HomeViewController: UIViewController {
         Facebook.attributedText = attributedString
         Facebook.font = font
         Facebook.textColor = fontColor
-        Facebook.linkTextAttributes = [.foregroundColor : UIColor.red]
+        Facebook.linkTextAttributes = [.foregroundColor : UIColor.blue]
     }
     
     /*
