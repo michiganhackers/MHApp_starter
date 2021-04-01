@@ -22,13 +22,34 @@
 
 import UIKit
 
-class TeamsViewController: UIViewController {
+class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var names: [String] = ["teams", "ios", "michiganHackers"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = names[indexPath.row]
+        
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     // an IBOutlet to the title UILabel. Basically a
     // referencable variable for the TeamsViewController class
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }

@@ -30,11 +30,20 @@
  */
 
 import UIKit
+import WebKit
 
 class AnnouncementsViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet var webView: WKWebView!
+    
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https:michiganhackers.github.io/mh-ios-app-backend/announcements/2021-02-21")!
+        let request = URLRequest(url: url)
+        webView.load(request)
+        // Do any additional setup
 
         // Do any additional setup after loading the view.
     }
