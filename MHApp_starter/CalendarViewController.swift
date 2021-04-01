@@ -18,13 +18,30 @@
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+         let cell=tableView.dequeueReusableCell(withIdentifier: "calendarCell", for: indexPath)
+        cell.textLabel?.text = days[indexPath.row]
+        return cell
+    }
+    
     // an IBOutlet to the title UILabel. Basically a
     // referencable variable for the CalendarViewController class
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var testingTableView: UITableView!
+    @IBOutlet weak var testingLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        testingTableView.dataSource = self
+        testingTableView.delegate = self
+        
+        //JACOBS NEW COMMENT TESTING GIT
 
         // Do any additional setup after loading the view.
     }
