@@ -27,6 +27,7 @@ class TeamsViewController: UIViewController {
     // referencable variable for the TeamsViewController class
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var person2_label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
