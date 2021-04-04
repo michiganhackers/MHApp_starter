@@ -19,6 +19,7 @@ import UIKit
 class HomeViewController: UIViewController {
     // an IBOutlet to the title UILabel. Basically a
     // referencable variable for the HomeViewController class
+    @IBOutlet weak var person1_label: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
