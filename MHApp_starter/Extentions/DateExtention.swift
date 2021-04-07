@@ -1,10 +1,3 @@
-//
-//  DateExtention.swift
-//  MHApp_starter
-//
-//  Created by Drew Scheffer on 2/27/21.
-//
-
 import Foundation
 
 extension Date {

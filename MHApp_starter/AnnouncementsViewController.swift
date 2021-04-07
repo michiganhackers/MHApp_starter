@@ -46,16 +46,33 @@ class AnnouncementsViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var lastSunday: Date = Date.today().previous(Date.Weekday.sunday);
 
-        let announcementURLString = createURLStringFromDate(date: formatLastSundayDate())
-        let announcementURL = URL(string:announcementURLString)
+        var announcementURLString = createURLStringFromDate(date: formatDate(lastSunday))
+        var announcementURL = URL(string:announcementURLString)
+        
+        var returnCode: Int = -1
+        
+        let task = URLSession.shared.dataTask(with: announcementURL!) { _, response, _ in
+            if let httpResponse = response as? HTTPURLResponse {
+                print(httpResponse.statusCode)
+                while (httpResponse.statusCode == 404){
+                    
+                }
+            }
+        }
+
+        task.resume()
+        
         let announcementURLRequest = URLRequest(url: announcementURL!)
         
         webView.load(announcementURLRequest)
+        
+        
     }
     
-    func formatLastSundayDate () -> String {
-        let lastSunday: Date = Date.today().previous(Date.Weekday.sunday);
+    func formatDate (_ lastSunday: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
         let lastSundayFormatted = dateFormatter.string(from: lastSunday)

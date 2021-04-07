@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C323CECF25EAED5500CA62F3 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CECE25EAED5500CA62F3 /* DateExtention.swift */; };
+		C3A2A8E1261D7F0D00EA1C9A /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */; };
+		C3F40C0D261D67900060B7D1 /* popUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */; };
 		C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */; };
 		C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */; };
 		C54C1C6725E6F572008EDC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C1C6525E6F572008EDC59 /* Main.storyboard */; };
@@ -19,10 +21,14 @@
 		C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */; };
 		C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */; };
 		C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8725E71300008EDC59 /* CalendarViewController.swift */; };
+		EE9E4AE93BBD6B2B66CD0B1A /* Pods_MHApp_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C575EB10A36EECC37DCA3B /* Pods_MHApp_starter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66E683FE1C7A1871EE8B1556 /* Pods-MHApp_starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHApp_starter.debug.xcconfig"; path = "Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter.debug.xcconfig"; sourceTree = "<group>"; };
 		C323CECE25EAED5500CA62F3 /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
+		C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpScreenViewController.swift; sourceTree = "<group>"; };
 		C54C1C5C25E6F572008EDC59 /* MHApp_starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHApp_starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		C54C1C8725E71300008EDC59 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D7C575EB10A36EECC37DCA3B /* Pods_MHApp_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHApp_starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D8ACC99FB1ED186344D429 /* Pods-MHApp_starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHApp_starter.release.xcconfig"; path = "Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9E4AE93BBD6B2B66CD0B1A /* Pods_MHApp_starter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EBCBC50CD38F0D164C202D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7C575EB10A36EECC37DCA3B /* Pods_MHApp_starter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C323CED125EAF2FE00CA62F3 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +79,8 @@
 			children = (
 				C54C1C5E25E6F572008EDC59 /* MHApp_starter */,
 				C54C1C5D25E6F572008EDC59 /* Products */,
+				E97BF847694664BAFDF57649 /* Pods */,
+				4EBCBC50CD38F0D164C202D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +98,8 @@
 				C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */,
 				C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */,
 				C54C1C6525E6F572008EDC59 /* Main.storyboard */,
+				C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */,
+				C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */,
 				C54C1C7725E71101008EDC59 /* HomeViewController.swift */,
 				C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */,
 				C54C1C8725E71300008EDC59 /* CalendarViewController.swift */,
@@ -93,6 +114,15 @@
 			path = MHApp_starter;
 			sourceTree = "<group>";
 		};
+		E97BF847694664BAFDF57649 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66E683FE1C7A1871EE8B1556 /* Pods-MHApp_starter.debug.xcconfig */,
+				F9D8ACC99FB1ED186344D429 /* Pods-MHApp_starter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C54C1C7325E6F573008EDC59 /* Build configuration list for PBXNativeTarget "MHApp_starter" */;
 			buildPhases = (
+				C8264C14AED0BB3B8E6E327F /* [CP] Check Pods Manifest.lock */,
 				C54C1C5825E6F572008EDC59 /* Sources */,
 				C54C1C5925E6F572008EDC59 /* Frameworks */,
 				C54C1C5A25E6F572008EDC59 /* Resources */,
+				69E4A4F62AF26D3E8E9F220A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +190,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69E4A4F62AF26D3E8E9F220A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8264C14AED0BB3B8E6E327F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHApp_starter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C54C1C5825E6F572008EDC59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -170,6 +244,8 @@
 				C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */,
 				C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */,
 				C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */,
+				C3A2A8E1261D7F0D00EA1C9A /* NSAttributedString.swift in Sources */,
+				C3F40C0D261D67900060B7D1 /* popUpScreenViewController.swift in Sources */,
 				C54C1C7E25E71149008EDC59 /* TeamsViewController.swift in Sources */,
 				C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */,
 			);
@@ -315,6 +391,7 @@
 		};
 		C54C1C7425E6F573008EDC59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E683FE1C7A1871EE8B1556 /* Pods-MHApp_starter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +411,7 @@
 		};
 		C54C1C7525E6F573008EDC59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D8ACC99FB1ED186344D429 /* Pods-MHApp_starter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
