@@ -16,25 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-3N-gjk">
-                                <rect key="frame" x="8" y="44" width="374" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-3N-gjk">
+                                <rect key="frame" x="8" y="44" width="375" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hX5-3N-gjk" secondAttribute="height" multiplier="375:52" id="HnP-tn-K9U"/>
+                                    <constraint firstAttribute="height" constant="52" id="UGo-3I-tqV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="irt-tl-a9O"/>
+                                    <constraint firstAttribute="width" constant="375" id="tvu-Ie-4au"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-ef-2vW" customClass="FSCalendar">
+                                <rect key="frame" x="55" y="206" width="281" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DZ6-NN-6a9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="HRF-pO-dTy"/>
+                                    <constraint firstAttribute="width" constant="281" id="vxn-3M-zDI"/>
+                                    <constraint firstAttribute="width" secondItem="kh0-ef-2vW" secondAttribute="height" multiplier="281:300" id="xZ5-7s-Iz0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kh0-ef-2vW" firstAttribute="top" secondItem="hX5-3N-gjk" secondAttribute="bottom" constant="110" id="4Vh-GW-9Tn"/>
+                            <constraint firstItem="kh0-ef-2vW" firstAttribute="top" secondItem="hX5-3N-gjk" secondAttribute="bottom" constant="110" id="IbF-tt-u6g"/>
+                            <constraint firstItem="hX5-3N-gjk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qam-c4-HWw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kh0-ef-2vW" secondAttribute="bottom" constant="255" id="cYh-ui-GDD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hX5-3N-gjk" secondAttribute="trailing" constant="7" id="nkv-mP-doa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kh0-ef-2vW" secondAttribute="trailing" constant="54" id="olR-3X-luD"/>
+                            <constraint firstItem="hX5-3N-gjk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="t7L-XE-zwy"/>
+                            <constraint firstItem="kh0-ef-2vW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="xwK-VU-ytN"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="XDm-dU-NLZ"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="XDm-dU-NLZ"/>
                     <connections>
+                        <outlet property="calendarView" destination="kh0-ef-2vW" id="BHQ-q6-NDu"/>
                         <outlet property="titleLabel" destination="hX5-3N-gjk" id="Pe8-4K-7x4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="805"/>
+            <point key="canvasLocation" x="192.30769230769229" y="804.73933649289097"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XXh-iF-EUL">
@@ -98,7 +124,7 @@
                         <viewLayoutGuide key="safeArea" id="T8r-0Y-6mY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Teams" id="854-PE-pcP"/>
+                    <tabBarItem key="tabBarItem" title="Teams" image="person" catalog="system" id="854-PE-pcP"/>
                     <connections>
                         <outlet property="tableView" destination="bPj-Bv-0ee" id="pdF-hi-Fr6"/>
                         <outlet property="titleLabel" destination="YhL-nd-w1o" id="6zL-rk-rLC"/>
@@ -198,7 +224,7 @@ Our end goal is to provide high quality resources for any and all students to be
                         <viewLayoutGuide key="safeArea" id="dLs-vP-mu9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="fl8-QD-4fa"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="fl8-QD-4fa"/>
                     <connections>
                         <outlet property="Logo" destination="bdA-EA-rw9" id="1OA-vv-L1N"/>
                         <outlet property="mainText" destination="x4F-lu-ryV" id="A1s-mi-GbP"/>
@@ -229,7 +255,7 @@ Our end goal is to provide high quality resources for any and all students to be
                         <viewLayoutGuide key="safeArea" id="bFL-eR-R7l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Announcements" id="6BD-p6-Ldv"/>
+                    <tabBarItem key="tabBarItem" title="Announcements" image="speaker.3" catalog="system" id="6BD-p6-Ldv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgv-34-kJI" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,6 +264,10 @@ Our end goal is to provide high quality resources for any and all students to be
     </scenes>
     <resources>
         <image name="HackersLogo" width="200" height="200"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="speaker.3" catalog="system" width="128" height="86"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

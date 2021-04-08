@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework

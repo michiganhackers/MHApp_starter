@@ -3,114 +3,204 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015A05B381E25C2FA80A0DA797179580 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 08226ADBC131C384CC955B281C701899 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07A0DFFBB0EA1EA20CE1C511B55C13B2 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A0725DF0F950E1471B42EC050D2A2FF6 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07F4634E722082DB20A867BD271864CA /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EEE0AF7CAC9977262A4D8BD6E40987 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C66E72276B24115F4EE16246D0D11C0 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F33BDCCAA21C64A74693F9FF63DCB52B /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		275CF53070F9850F9CF142A83F29F9D2 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBCE7921E201DE1DB93A1A6629BB609 /* UIAppearance+Swift.m */; };
-		340266620025174C32352D68B8FAE480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316612CB60866F3952D1AEFFE9E409E7 /* Foundation.framework */; };
+		015A05B381E25C2FA80A0DA797179580 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 765A8F5340BC43D25AD6B00D0658CD1E /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 688832E942228F83375638BA34063BA0 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A0DFFBB0EA1EA20CE1C511B55C13B2 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = CA000CB92D8B9A12119024B25957CC83 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07F4634E722082DB20A867BD271864CA /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CF51D364F3950B6B5C35EEBB81535 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0B998B9905F98142443A878B2AB8BD /* FSCalendarDelegationFactory.m */; };
+		0C66E72276B24115F4EE16246D0D11C0 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C6899C6E6B63ECD37597AD56F18A41 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E6CCAC705C37DBD2ADF365A24B0A0C /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 690AC24CBC4106F907008D945A69EACE /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = A16F131A6E0EA00A3C37BB7EF533554B /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C38ECE41E1BD08BD8893808250DBAA18 /* FSCalendarSeparatorDecorationView.m */; };
+		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AA0BC02CAC372F7C8C611C477D13C5 /* FSCalendarExtensions.m */; };
+		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC0C945D656B03F033FE8AC6BADC7F /* FSCalendarStickyHeader.m */; };
+		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D892B2C94D0C56F1B620B6EB10DB022B /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD69BDE0BC5AFD3C25CFF7598BAC629 /* FSCalendar-dummy.m */; };
+		275CF53070F9850F9CF142A83F29F9D2 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB2DEEFD55F61001F18F580B9B0ED6 /* UIAppearance+Swift.m */; };
+		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A82174ED39B2109A5F5EFFF1B907EA35 /* FSCalendarConstants.m */; };
 		3C7A417994BCD7E167472D130D3D3F03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D60A893F479C33123291FB0EED416 /* QuartzCore.framework */; };
-		3C996FBEFFF38718E791135C621B8C59 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1AE8C254001F7F92ED37D9D26D61FB /* UIButton+Chameleon.m */; };
+		3C996FBEFFF38718E791135C621B8C59 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6478C5BD88548020387F41C9671E89 /* UIButton+Chameleon.m */; };
+		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B36FE0277585C575A304E15BCD94566 /* FSCalendarWeekdayView.m */; };
 		46A0C20A11F9DDB56C498C9E3D28EACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316612CB60866F3952D1AEFFE9E409E7 /* Foundation.framework */; };
-		4DF43DB058D1638FE6E51EC9B5BA01B9 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8541D9EF7517A6BE32EA482FEFA23378 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63B7FAF3B3F4BA5A42B1F016BEE0FC47 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3140E6F480F0EA43F7CDC195F200EA47 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		693B98DE045C80265A735BD94C87953D /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DF934F44C06FCD84165C7C989C52A /* ChameleonConstants.m */; };
-		6B2DC678EA5CCC291354FE306DF0B28E /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8BB295F5304C16F05413CC4AD4F6D8 /* Chameleon_.m */; };
-		6C87CCC7E974983BF3DDB7CDDD1CCC6A /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFEB0C547FC68265CF81917A15DEBD0 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8624349E44507A5863651CAB51E38F7F /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FFE1FCB316B88AA88208774B094994 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8659D5863A89A6F9539AE15D673C07C5 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5E5CCB1D1FFFC5964E34216F02729 /* UIViewController+Chameleon.m */; };
-		866A210E47AEF4ABB16E6D6F5B6A6E51 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5625BE9289781A6C19BB697662214C5 /* UIView+ChameleonPrivate.m */; };
-		866B54511E7CBFADD1F78C285087AE8E /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBFC1C4E6385A835B4FFF73C92E7EA /* ChameleonShorthand.swift */; };
-		874D8A04ABF919CED20EB0E440C44101 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBCFDB403C46ECDCA349AF7D04F6C /* NSArray+Chameleon.m */; };
-		918885B90BECC18ABC5F58D92E34EF13 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E78F94F7F32321E615FFA45BBE4C8B /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9247AA02A534F1A201D929C39C057B50 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C37D154CEB427DFD561F121A70E3C03 /* UIColor+Chameleon.m */; };
-		936F268AB9257A3435DD4BAAB5A4A135 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D05E5617D32DC60BDEEF56A44AE75235 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9409B283B310D29B6FD6440A3463599C /* Pods-MHApp_starter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A852A23DD1592E6E165AF9980FA0D15 /* Pods-MHApp_starter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A68832C167B77BE09F6F3485A607A744 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA79F62FB7533FA980D6B76DD3DC158 /* UILabel+Chameleon.m */; };
+		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D6393F3FE2AD22D97B275B4BAB171ACC /* FSCalendarCollectionViewLayout.m */; };
+		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFF12A3886CCB4CA7F90FACA656B17 /* FSCalendarDelegationProxy.m */; };
+		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5D7E5ED1C91617B596B05F14A84C39 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D0CE510271D06DE5AE8038C6D101F8 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DE07DAAC5BD735FB2078C0F4C1579A /* FSCalendarCell.m */; };
+		4DF43DB058D1638FE6E51EC9B5BA01B9 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B91D909024EC5207DE9F741AE6A2B2 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E768795F01F5401E893FC9599F53469 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CA13855B17E33FB2CE3B08E23ED75B /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B7FAF3B3F4BA5A42B1F016BEE0FC47 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5C3B0759EC866EAE860875B3A726F4 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		693B98DE045C80265A735BD94C87953D /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1D9F250B0A1204DE334A56808EAAC /* ChameleonConstants.m */; };
+		6B2DC678EA5CCC291354FE306DF0B28E /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E876F6B7A62BA0B90114BA1E962E072 /* Chameleon_.m */; };
+		6C87CCC7E974983BF3DDB7CDDD1CCC6A /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = EABFA1E0DE22F2F85F7A67970940DB76 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 285027DF8EE5843A68C77DA5342C1554 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F973D87501DFC80BD6B91E235385E /* FSCalendar.m */; };
+		8457ADA9594A9FBFE5A58F84593FC332 /* Pods-MHApp_starter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A852A23DD1592E6E165AF9980FA0D15 /* Pods-MHApp_starter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8624349E44507A5863651CAB51E38F7F /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F96B23835736842BE2A56F6C70B055 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3312576DC5AC04FC41C7AC34738FB164 /* FSCalendarAppearance.m */; };
+		8659D5863A89A6F9539AE15D673C07C5 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 15362B5401ED0E0F2F3B290FA4A7F4CB /* UIViewController+Chameleon.m */; };
+		866A210E47AEF4ABB16E6D6F5B6A6E51 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C62263302F1EFF738B6D1E18D3290 /* UIView+ChameleonPrivate.m */; };
+		866B54511E7CBFADD1F78C285087AE8E /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599ACE97D772C413D4F07C612F827BF /* ChameleonShorthand.swift */; };
+		874D8A04ABF919CED20EB0E440C44101 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A04A1B1E1993365478ACE1912AEF950 /* NSArray+Chameleon.m */; };
+		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 259714992AEA74F9E18C0682096E94F9 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		918885B90BECC18ABC5F58D92E34EF13 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA6CD4930F6999BD9745B137DAAD95C /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFCA01E727E7E655FC0E4B406B45B54 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E62DD6210F49BA438CC4E5CDCBEAAC /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9247AA02A534F1A201D929C39C057B50 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCECFEEF79190CA0B43D74F2E900D1 /* UIColor+Chameleon.m */; };
+		936F268AB9257A3435DD4BAAB5A4A135 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCC4E18B8D5E22366BF2779EE8EF172 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D3B2EC7BAD20C4F2269A79F8FF972B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9E080A9A1ED9063D387790E4AE632 /* UIKit.framework */; };
+		A68832C167B77BE09F6F3485A607A744 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ACFE0748E5FE2CBC5751081AC07935 /* UILabel+Chameleon.m */; };
+		BA4618552515686F83F7873D094EB189 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D60A893F479C33123291FB0EED416 /* QuartzCore.framework */; };
+		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FFAF42553CDFEAD23AA82FCD955DC6 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2CF2185C458CDCE23B1C34BD97EE3C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F00BEE59DC7EC91BB1C827BEF78C6A7 /* CoreGraphics.framework */; };
-		CAF49E2A54F794D5F6DD10F1FE77F321 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C62B60BAA0FC50DC728853C6494E210E /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EAE2029AC28812476226A81228135C /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2853566CA7A577369E60DD8090E5285B /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF49E2A54F794D5F6DD10F1FE77F321 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0F58BC2680780C89DCAF561913F600 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04B800CFC79B0483F151C5DC99E571D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9E080A9A1ED9063D387790E4AE632 /* UIKit.framework */; };
-		DA97A7E5793FADE5749D21002AB10B57 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F02500D92F634947740E94812793DE3 /* UIImage+ChameleonPrivate.m */; };
-		DD7B1A58C5C68491723265E6D763B26E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D5FC59F8950B0849679D584FCD26A /* ChameleonFramework-dummy.m */; };
-		DDBC762ABE86F3917C6553A64E722A70 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EA6B8776E3DF3223E7886D1B8B13F2D /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0DBD978FE1FBA3923D9A482352252D4 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3D7CE81879433EA6DF45D6AAE55978 /* UIColor+ChameleonPrivate.m */; };
-		E7D344059042D076A5C61D13018BA0D8 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 07BCE507476A69AEE06F873ED25F24C0 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E82EF3AFD38848BAC02735643F4FBF6C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 46AB6C92B0B251261065C02FE8D1B221 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEF22A1455C96635E480D1DCCE664913 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE2A6D82C3BC5A8C563F05D6DF7CF1B /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA49618EEDBE490B9BF56CAD65ABF8EA /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8974E763AA1A90F1D1BF40689E33D8DE /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDDCC8F6DEF85766C8B6A17635689CC6 /* Pods-MHApp_starter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B82ECDDF154962835C500C2E5C9141E /* Pods-MHApp_starter-dummy.m */; };
-		FE3A4BBC89893220B5590FC8A65C0233 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5607CE28A2238E382C15C8578495702C /* UINavigationController+Chameleon.m */; };
+		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ADAD1DB975D8F1FF7C3EF3CD6CCD64 /* FSCalendarTransitionCoordinator.m */; };
+		D9B57EE74DF36F96E3E0A95736AF35A9 /* Pods-MHApp_starter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B82ECDDF154962835C500C2E5C9141E /* Pods-MHApp_starter-dummy.m */; };
+		DA97A7E5793FADE5749D21002AB10B57 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62FBB6D14E487EAADE26E5D695161 /* UIImage+ChameleonPrivate.m */; };
+		DD7B1A58C5C68491723265E6D763B26E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBAFE6442C7CB7543DE7133FF996562 /* ChameleonFramework-dummy.m */; };
+		DDBC762ABE86F3917C6553A64E722A70 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC7BE3FE8B31587054D5C5386FDA0E7 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9968CE9B345E6EE0EC7282385EFA3085 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DBD978FE1FBA3923D9A482352252D4 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA9B1D8429C53B6BA08E741CC7F0 /* UIColor+ChameleonPrivate.m */; };
+		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45527DCC7A2D40212EB9FC1C3788C57D /* FSCalendarCollectionView.m */; };
+		E7D344059042D076A5C61D13018BA0D8 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 8608A1145D7AAC053813ED9AC3BF2708 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E82EF3AFD38848BAC02735643F4FBF6C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 071789E473800DB2F6D2B48FF64C6687 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEF22A1455C96635E480D1DCCE664913 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E753D3B865CC01B25B86544B264ADD /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F390EE3F6501EA735B348A94C0416E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316612CB60866F3952D1AEFFE9E409E7 /* Foundation.framework */; };
+		FA49618EEDBE490B9BF56CAD65ABF8EA /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 986152C194BCA0C7C8A9E53D6AFEA9F9 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B3DFDC0A3B259BA165BFDA3072BA2 /* FSCalendarCalculator.m */; };
+		FE3A4BBC89893220B5590FC8A65C0233 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C74599A089E241EDD8B15A8F0A272 /* UINavigationController+Chameleon.m */; };
+		FE6BED285954D22CE6242D9AFCC1D089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316612CB60866F3952D1AEFFE9E409E7 /* Foundation.framework */; };
+		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F540C93937AB00551EAEC4A8CDADF9 /* FSCalendarHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C8246133D28EC22591D1D28C4F5B85A2 /* PBXContainerItemProxy */ = {
+		66B9BC79E081B9F842C4CEE99A33B06F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28BFDC89BA4363F4F3576DEC70EE10AE;
 			remoteInfo = ChameleonFramework;
 		};
+		7B3619CD02250BD665A8D2519AF3038A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13285D54682BEAD805960F9E6EEB9949;
+			remoteInfo = FSCalendar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00137E5C5C31146CE023EC3CE5B5B3A5 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		02F96B23835736842BE2A56F6C70B055 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
 		0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04EEBCFDB403C46ECDCA349AF7D04F6C /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		067DF934F44C06FCD84165C7C989C52A /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		07BCE507476A69AEE06F873ED25F24C0 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		08226ADBC131C384CC955B281C701899 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		0FE2A6D82C3BC5A8C563F05D6DF7CF1B /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		11ACFBC64C0823BEB9E43C5D312B0B21 /* ChameleonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.release.xcconfig; sourceTree = "<group>"; };
-		17499AC1500D6348ED404F10919A6685 /* ChameleonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.debug.xcconfig; sourceTree = "<group>"; };
+		071789E473800DB2F6D2B48FF64C6687 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		07E6CCAC705C37DBD2ADF365A24B0A0C /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		08E0FA9B1D8429C53B6BA08E741CC7F0 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		0A6478C5BD88548020387F41C9671E89 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		0E0B3DFDC0A3B259BA165BFDA3072BA2 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		0E5D7E5ED1C91617B596B05F14A84C39 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		15362B5401ED0E0F2F3B290FA4A7F4CB /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		19CB2DEEFD55F61001F18F580B9B0ED6 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		1FC7BE3FE8B31587054D5C5386FDA0E7 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		2178745CC3C0E19D7A81AE576DE8A0CF /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		21C03F993EEBF1C9F40DAB82D90C03BF /* Pods-MHApp_starter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MHApp_starter-frameworks.sh"; sourceTree = "<group>"; };
+		22E753D3B865CC01B25B86544B264ADD /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
 		251D60A893F479C33123291FB0EED416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		259714992AEA74F9E18C0682096E94F9 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		285027DF8EE5843A68C77DA5342C1554 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		2853566CA7A577369E60DD8090E5285B /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
 		2B82ECDDF154962835C500C2E5C9141E /* Pods-MHApp_starter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MHApp_starter-dummy.m"; sourceTree = "<group>"; };
+		2E768795F01F5401E893FC9599F53469 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
 		2F00BEE59DC7EC91BB1C827BEF78C6A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		3140E6F480F0EA43F7CDC195F200EA47 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		2FBAFE6442C7CB7543DE7133FF996562 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		316612CB60866F3952D1AEFFE9E409E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FA79F62FB7533FA980D6B76DD3DC158 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		46AB6C92B0B251261065C02FE8D1B221 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		5607CE28A2238E382C15C8578495702C /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		3312576DC5AC04FC41C7AC34738FB164 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		3ACCECFEEF79190CA0B43D74F2E900D1 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		3BFFF12A3886CCB4CA7F90FACA656B17 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		45527DCC7A2D40212EB9FC1C3788C57D /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		4A5C3B0759EC866EAE860875B3A726F4 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		54CA13855B17E33FB2CE3B08E23ED75B /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		558915925690E111D3B8C4EFC7EB984C /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
 		573273726CF60E216675EC48684A5BDF /* Pods-MHApp_starter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MHApp_starter-acknowledgements.plist"; sourceTree = "<group>"; };
-		5B8BB295F5304C16F05413CC4AD4F6D8 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		60D373DAA87564D0BFD51F9DA949B75F /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		5B36FE0277585C575A304E15BCD94566 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		64F90CE0D3FD2183E4A9C637132D38AA /* Pods_MHApp_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MHApp_starter.framework; path = "Pods-MHApp_starter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69FFE1FCB316B88AA88208774B094994 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		65997473764D7C333924EF9889B31CEA /* ChameleonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.debug.xcconfig; sourceTree = "<group>"; };
+		66ADAD1DB975D8F1FF7C3EF3CD6CCD64 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		688832E942228F83375638BA34063BA0 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		690AC24CBC4106F907008D945A69EACE /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		69AA0BC02CAC372F7C8C611C477D13C5 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		6B0F58BC2680780C89DCAF561913F600 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
 		6DF9E080A9A1ED9063D387790E4AE632 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6EA6B8776E3DF3223E7886D1B8B13F2D /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		6E876F6B7A62BA0B90114BA1E962E072 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		729F973D87501DFC80BD6B91E235385E /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		765A8F5340BC43D25AD6B00D0658CD1E /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		79FFAF42553CDFEAD23AA82FCD955DC6 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
 		7A852A23DD1592E6E165AF9980FA0D15 /* Pods-MHApp_starter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MHApp_starter-umbrella.h"; sourceTree = "<group>"; };
-		7B3AB70A8AE5E5FAFFF7E4D5B819C476 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		7F02500D92F634947740E94812793DE3 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		8541D9EF7517A6BE32EA482FEFA23378 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		8974E763AA1A90F1D1BF40689E33D8DE /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		8C37D154CEB427DFD561F121A70E3C03 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		9AFEB0C547FC68265CF81917A15DEBD0 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		9B1AE8C254001F7F92ED37D9D26D61FB /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		7F76D74F0E9BC09BDA72639ADE571025 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
+		83E62DD6210F49BA438CC4E5CDCBEAAC /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		8599ACE97D772C413D4F07C612F827BF /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		8608A1145D7AAC053813ED9AC3BF2708 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		86E31BF5441C1245B2763BC673D35EE8 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		892686754687AF7A00E1223FCB360BDA /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
+		8A04A1B1E1993365478ACE1912AEF950 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		8EF62FBB6D14E487EAADE26E5D695161 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		94F540C93937AB00551EAEC4A8CDADF9 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		986152C194BCA0C7C8A9E53D6AFEA9F9 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		9968CE9B345E6EE0EC7282385EFA3085 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		9A6C74599A089E241EDD8B15A8F0A272 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0725DF0F950E1471B42EC050D2A2FF6 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		A16F131A6E0EA00A3C37BB7EF533554B /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		A82174ED39B2109A5F5EFFF1B907EA35 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		AB5CF51D364F3950B6B5C35EEBB81535 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		ABD69BDE0BC5AFD3C25CFF7598BAC629 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		B5ACFE0748E5FE2CBC5751081AC07935 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
 		B7897E2D75BDB72A574DBBC6B9FEFA9E /* Pods-MHApp_starter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MHApp_starter-Info.plist"; sourceTree = "<group>"; };
 		BB7350984B93B1C42256D4D2FA9BB281 /* Pods-MHApp_starter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MHApp_starter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C62B60BAA0FC50DC728853C6494E210E /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		D05E5617D32DC60BDEEF56A44AE75235 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		D4E78F94F7F32321E615FFA45BBE4C8B /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		BD0B998B9905F98142443A878B2AB8BD /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		C309A2863839102B500441F7F525FA55 /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		C38ECE41E1BD08BD8893808250DBAA18 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		C4FB5ED52021FD01300188EB27E3BEA8 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		C9EAE2029AC28812476226A81228135C /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		CA000CB92D8B9A12119024B25957CC83 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		CBFCA01E727E7E655FC0E4B406B45B54 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		CCFC0C945D656B03F033FE8AC6BADC7F /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		CDD1D9F250B0A1204DE334A56808EAAC /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		D6393F3FE2AD22D97B275B4BAB171ACC /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
 		D68E9B8E496816C4522CD12870DE19BE /* Pods-MHApp_starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MHApp_starter.debug.xcconfig"; sourceTree = "<group>"; };
-		D6EEE0AF7CAC9977262A4D8BD6E40987 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		D9CBFC1C4E6385A835B4FFF73C92E7EA /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		D79C62263302F1EFF738B6D1E18D3290 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		D892B2C94D0C56F1B620B6EB10DB022B /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
 		DC399E24AFD16F9E3B03BE2C54E72B05 /* Pods-MHApp_starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MHApp_starter.release.xcconfig"; sourceTree = "<group>"; };
-		E6C5E5CCB1D1FFFC5964E34216F02729 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		DE27B84427A50DD975C48183460F7518 /* ChameleonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.release.xcconfig; sourceTree = "<group>"; };
+		E3DE07DAAC5BD735FB2078C0F4C1579A /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		E6C6899C6E6B63ECD37597AD56F18A41 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		E812F7859303189582DFD49435718AE1 /* Pods-MHApp_starter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MHApp_starter.modulemap"; sourceTree = "<group>"; };
-		F24D5FC59F8950B0849679D584FCD26A /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		F33BDCCAA21C64A74693F9FF63DCB52B /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		F5625BE9289781A6C19BB697662214C5 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		FDBCE7921E201DE1DB93A1A6629BB609 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		FE67EEA2FF6D9483A6F8D89CA05C4077 /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
-		FF3D7CE81879433EA6DF45D6AAE55978 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		EABFA1E0DE22F2F85F7A67970940DB76 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		ECA6CD4930F6999BD9745B137DAAD95C /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		F0D0CE510271D06DE5AE8038C6D101F8 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		F8B91D909024EC5207DE9F741AE6A2B2 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		FBCC4E18B8D5E22366BF2779EE8EF172 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6FDE03FC17ACDDDA7B554BDDFDA1F2CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6BED285954D22CE6242D9AFCC1D089 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72FCBED230C996317A485724760EB018 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,34 +212,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEDB157BBF1D77E13624EDD1984ED44C /* Frameworks */ = {
+		B93B0F6F7A24587A13A4DC4628DF35C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340266620025174C32352D68B8FAE480 /* Foundation.framework in Frameworks */,
+				F390EE3F6501EA735B348A94C0416E8E /* Foundation.framework in Frameworks */,
+				BA4618552515686F83F7873D094EB189 /* QuartzCore.framework in Frameworks */,
+				93D3B2EC7BAD20C4F2269A79F8FF972B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3283A252E0B63E2A69E4ED3D5853C067 /* Swift */ = {
+		0D22E1F6ECA614561CB3ED0EC81093A2 /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				D9CBFC1C4E6385A835B4FFF73C92E7EA /* ChameleonShorthand.swift */,
+				A16F131A6E0EA00A3C37BB7EF533554B /* FSCalendar.h */,
+				729F973D87501DFC80BD6B91E235385E /* FSCalendar.m */,
+				54CA13855B17E33FB2CE3B08E23ED75B /* FSCalendarAppearance.h */,
+				3312576DC5AC04FC41C7AC34738FB164 /* FSCalendarAppearance.m */,
+				0E5D7E5ED1C91617B596B05F14A84C39 /* FSCalendarCalculator.h */,
+				0E0B3DFDC0A3B259BA165BFDA3072BA2 /* FSCalendarCalculator.m */,
+				2853566CA7A577369E60DD8090E5285B /* FSCalendarCell.h */,
+				E3DE07DAAC5BD735FB2078C0F4C1579A /* FSCalendarCell.m */,
+				9968CE9B345E6EE0EC7282385EFA3085 /* FSCalendarCollectionView.h */,
+				45527DCC7A2D40212EB9FC1C3788C57D /* FSCalendarCollectionView.m */,
+				2E768795F01F5401E893FC9599F53469 /* FSCalendarCollectionViewLayout.h */,
+				D6393F3FE2AD22D97B275B4BAB171ACC /* FSCalendarCollectionViewLayout.m */,
+				285027DF8EE5843A68C77DA5342C1554 /* FSCalendarConstants.h */,
+				A82174ED39B2109A5F5EFFF1B907EA35 /* FSCalendarConstants.m */,
+				D892B2C94D0C56F1B620B6EB10DB022B /* FSCalendarDelegationFactory.h */,
+				BD0B998B9905F98142443A878B2AB8BD /* FSCalendarDelegationFactory.m */,
+				07E6CCAC705C37DBD2ADF365A24B0A0C /* FSCalendarDelegationProxy.h */,
+				3BFFF12A3886CCB4CA7F90FACA656B17 /* FSCalendarDelegationProxy.m */,
+				CBFCA01E727E7E655FC0E4B406B45B54 /* FSCalendarDynamicHeader.h */,
+				690AC24CBC4106F907008D945A69EACE /* FSCalendarExtensions.h */,
+				69AA0BC02CAC372F7C8C611C477D13C5 /* FSCalendarExtensions.m */,
+				79FFAF42553CDFEAD23AA82FCD955DC6 /* FSCalendarHeaderView.h */,
+				94F540C93937AB00551EAEC4A8CDADF9 /* FSCalendarHeaderView.m */,
+				C9EAE2029AC28812476226A81228135C /* FSCalendarSeparatorDecorationView.h */,
+				C38ECE41E1BD08BD8893808250DBAA18 /* FSCalendarSeparatorDecorationView.m */,
+				688832E942228F83375638BA34063BA0 /* FSCalendarStickyHeader.h */,
+				CCFC0C945D656B03F033FE8AC6BADC7F /* FSCalendarStickyHeader.m */,
+				F0D0CE510271D06DE5AE8038C6D101F8 /* FSCalendarTransitionCoordinator.h */,
+				66ADAD1DB975D8F1FF7C3EF3CD6CCD64 /* FSCalendarTransitionCoordinator.m */,
+				83E62DD6210F49BA438CC4E5CDCBEAAC /* FSCalendarWeekdayView.h */,
+				5B36FE0277585C575A304E15BCD94566 /* FSCalendarWeekdayView.m */,
+				CABD23DC54A14DF890B2FFA5E1008A0B /* Support Files */,
 			);
-			name = Swift;
+			name = FSCalendar;
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		57226BB5CCF602F840A48C37D9312191 /* ChameleonFramework */ = {
+		62245ABB1F316A4801E74E6986D42B43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B29D9939BA5D7AAB2BC18AFD31DB5AFF /* Default */,
-				9ED351D1D1F40D09FE1BC51FD16D4FBC /* Support Files */,
-				3283A252E0B63E2A69E4ED3D5853C067 /* Swift */,
+				88EF60C9FC621E941C351D78FB386D4B /* ChameleonFramework */,
+				0D22E1F6ECA614561CB3ED0EC81093A2 /* FSCalendar */,
 			);
-			name = ChameleonFramework;
-			path = ChameleonFramework;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6EAD761817B84B0B26C1B9B739D87883 /* Pods-MHApp_starter */ = {
@@ -169,61 +291,57 @@
 			path = "Target Support Files/Pods-MHApp_starter";
 			sourceTree = "<group>";
 		};
-		8857E6EA91789D986902C1EA69E325F3 /* Pods */ = {
+		88EF60C9FC621E941C351D78FB386D4B /* ChameleonFramework */ = {
 			isa = PBXGroup;
 			children = (
-				57226BB5CCF602F840A48C37D9312191 /* ChameleonFramework */,
+				8BB7B3F6C81874052E70057BA08F255E /* Default */,
+				D0BB75CF05F85286658C1B9B85A88EB6 /* Support Files */,
+				ABEF17A6E0C8632F3E17DD9762B0C22A /* Swift */,
 			);
-			name = Pods;
+			name = ChameleonFramework;
+			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
-		9ED351D1D1F40D09FE1BC51FD16D4FBC /* Support Files */ = {
+		8BB7B3F6C81874052E70057BA08F255E /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				60D373DAA87564D0BFD51F9DA949B75F /* ChameleonFramework.modulemap */,
-				F24D5FC59F8950B0849679D584FCD26A /* ChameleonFramework-dummy.m */,
-				FE67EEA2FF6D9483A6F8D89CA05C4077 /* ChameleonFramework-Info.plist */,
-				7B3AB70A8AE5E5FAFFF7E4D5B819C476 /* ChameleonFramework-prefix.pch */,
-				D05E5617D32DC60BDEEF56A44AE75235 /* ChameleonFramework-umbrella.h */,
-				17499AC1500D6348ED404F10919A6685 /* ChameleonFramework.debug.xcconfig */,
-				11ACFBC64C0823BEB9E43C5D312B0B21 /* ChameleonFramework.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
-			sourceTree = "<group>";
-		};
-		B29D9939BA5D7AAB2BC18AFD31DB5AFF /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				08226ADBC131C384CC955B281C701899 /* Chameleon.h */,
-				9AFEB0C547FC68265CF81917A15DEBD0 /* Chameleon_.h */,
-				5B8BB295F5304C16F05413CC4AD4F6D8 /* Chameleon_.m */,
-				8974E763AA1A90F1D1BF40689E33D8DE /* ChameleonConstants.h */,
-				067DF934F44C06FCD84165C7C989C52A /* ChameleonConstants.m */,
-				07BCE507476A69AEE06F873ED25F24C0 /* ChameleonEnums.h */,
-				C62B60BAA0FC50DC728853C6494E210E /* ChameleonMacros.h */,
-				69FFE1FCB316B88AA88208774B094994 /* NSArray+Chameleon.h */,
-				04EEBCFDB403C46ECDCA349AF7D04F6C /* NSArray+Chameleon.m */,
-				A0725DF0F950E1471B42EC050D2A2FF6 /* UIAppearance+Swift.h */,
-				FDBCE7921E201DE1DB93A1A6629BB609 /* UIAppearance+Swift.m */,
-				8541D9EF7517A6BE32EA482FEFA23378 /* UIButton+Chameleon.h */,
-				9B1AE8C254001F7F92ED37D9D26D61FB /* UIButton+Chameleon.m */,
-				0FE2A6D82C3BC5A8C563F05D6DF7CF1B /* UIColor+Chameleon.h */,
-				8C37D154CEB427DFD561F121A70E3C03 /* UIColor+Chameleon.m */,
-				6EA6B8776E3DF3223E7886D1B8B13F2D /* UIColor+ChameleonPrivate.h */,
-				FF3D7CE81879433EA6DF45D6AAE55978 /* UIColor+ChameleonPrivate.m */,
-				3140E6F480F0EA43F7CDC195F200EA47 /* UIImage+ChameleonPrivate.h */,
-				7F02500D92F634947740E94812793DE3 /* UIImage+ChameleonPrivate.m */,
-				46AB6C92B0B251261065C02FE8D1B221 /* UILabel+Chameleon.h */,
-				3FA79F62FB7533FA980D6B76DD3DC158 /* UILabel+Chameleon.m */,
-				D6EEE0AF7CAC9977262A4D8BD6E40987 /* UINavigationController+Chameleon.h */,
-				5607CE28A2238E382C15C8578495702C /* UINavigationController+Chameleon.m */,
-				F33BDCCAA21C64A74693F9FF63DCB52B /* UIView+ChameleonPrivate.h */,
-				F5625BE9289781A6C19BB697662214C5 /* UIView+ChameleonPrivate.m */,
-				D4E78F94F7F32321E615FFA45BBE4C8B /* UIViewController+Chameleon.h */,
-				E6C5E5CCB1D1FFFC5964E34216F02729 /* UIViewController+Chameleon.m */,
+				765A8F5340BC43D25AD6B00D0658CD1E /* Chameleon.h */,
+				EABFA1E0DE22F2F85F7A67970940DB76 /* Chameleon_.h */,
+				6E876F6B7A62BA0B90114BA1E962E072 /* Chameleon_.m */,
+				986152C194BCA0C7C8A9E53D6AFEA9F9 /* ChameleonConstants.h */,
+				CDD1D9F250B0A1204DE334A56808EAAC /* ChameleonConstants.m */,
+				8608A1145D7AAC053813ED9AC3BF2708 /* ChameleonEnums.h */,
+				6B0F58BC2680780C89DCAF561913F600 /* ChameleonMacros.h */,
+				02F96B23835736842BE2A56F6C70B055 /* NSArray+Chameleon.h */,
+				8A04A1B1E1993365478ACE1912AEF950 /* NSArray+Chameleon.m */,
+				CA000CB92D8B9A12119024B25957CC83 /* UIAppearance+Swift.h */,
+				19CB2DEEFD55F61001F18F580B9B0ED6 /* UIAppearance+Swift.m */,
+				F8B91D909024EC5207DE9F741AE6A2B2 /* UIButton+Chameleon.h */,
+				0A6478C5BD88548020387F41C9671E89 /* UIButton+Chameleon.m */,
+				22E753D3B865CC01B25B86544B264ADD /* UIColor+Chameleon.h */,
+				3ACCECFEEF79190CA0B43D74F2E900D1 /* UIColor+Chameleon.m */,
+				1FC7BE3FE8B31587054D5C5386FDA0E7 /* UIColor+ChameleonPrivate.h */,
+				08E0FA9B1D8429C53B6BA08E741CC7F0 /* UIColor+ChameleonPrivate.m */,
+				4A5C3B0759EC866EAE860875B3A726F4 /* UIImage+ChameleonPrivate.h */,
+				8EF62FBB6D14E487EAADE26E5D695161 /* UIImage+ChameleonPrivate.m */,
+				071789E473800DB2F6D2B48FF64C6687 /* UILabel+Chameleon.h */,
+				B5ACFE0748E5FE2CBC5751081AC07935 /* UILabel+Chameleon.m */,
+				AB5CF51D364F3950B6B5C35EEBB81535 /* UINavigationController+Chameleon.h */,
+				9A6C74599A089E241EDD8B15A8F0A272 /* UINavigationController+Chameleon.m */,
+				E6C6899C6E6B63ECD37597AD56F18A41 /* UIView+ChameleonPrivate.h */,
+				D79C62263302F1EFF738B6D1E18D3290 /* UIView+ChameleonPrivate.m */,
+				ECA6CD4930F6999BD9745B137DAAD95C /* UIViewController+Chameleon.h */,
+				15362B5401ED0E0F2F3B290FA4A7F4CB /* UIViewController+Chameleon.m */,
 			);
 			name = Default;
+			sourceTree = "<group>";
+		};
+		ABEF17A6E0C8632F3E17DD9762B0C22A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8599ACE97D772C413D4F07C612F827BF /* ChameleonShorthand.swift */,
+			);
+			name = Swift;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -234,13 +352,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDC0FD07C651DC9D0B3684D11CF0F195 /* Products */ = {
+		CABD23DC54A14DF890B2FFA5E1008A0B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */,
-				64F90CE0D3FD2183E4A9C637132D38AA /* Pods_MHApp_starter.framework */,
+				86E31BF5441C1245B2763BC673D35EE8 /* FSCalendar.modulemap */,
+				ABD69BDE0BC5AFD3C25CFF7598BAC629 /* FSCalendar-dummy.m */,
+				558915925690E111D3B8C4EFC7EB984C /* FSCalendar-Info.plist */,
+				00137E5C5C31146CE023EC3CE5B5B3A5 /* FSCalendar-prefix.pch */,
+				259714992AEA74F9E18C0682096E94F9 /* FSCalendar-umbrella.h */,
+				C309A2863839102B500441F7F525FA55 /* FSCalendar.debug.xcconfig */,
+				7F76D74F0E9BC09BDA72639ADE571025 /* FSCalendar.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -248,10 +372,25 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				8857E6EA91789D986902C1EA69E325F3 /* Pods */,
-				BDC0FD07C651DC9D0B3684D11CF0F195 /* Products */,
+				62245ABB1F316A4801E74E6986D42B43 /* Pods */,
+				FF09E858F9E1D758E9146C0F28BC41D1 /* Products */,
 				D35E7ED5FE7C0F5719CD3796A17EA50F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D0BB75CF05F85286658C1B9B85A88EB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2178745CC3C0E19D7A81AE576DE8A0CF /* ChameleonFramework.modulemap */,
+				2FBAFE6442C7CB7543DE7133FF996562 /* ChameleonFramework-dummy.m */,
+				892686754687AF7A00E1223FCB360BDA /* ChameleonFramework-Info.plist */,
+				C4FB5ED52021FD01300188EB27E3BEA8 /* ChameleonFramework-prefix.pch */,
+				FBCC4E18B8D5E22366BF2779EE8EF172 /* ChameleonFramework-umbrella.h */,
+				65997473764D7C333924EF9889B31CEA /* ChameleonFramework.debug.xcconfig */,
+				DE27B84427A50DD975C48183460F7518 /* ChameleonFramework.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 		D35E7ED5FE7C0F5719CD3796A17EA50F /* Targets Support Files */ = {
@@ -273,14 +412,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FF09E858F9E1D758E9146C0F28BC41D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */,
+				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
+				64F90CE0D3FD2183E4A9C637132D38AA /* Pods_MHApp_starter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		131FE874AE59F38BBB12FA9364862C14 /* Headers */ = {
+		5A11DF0B4E52A4743171887A510C1816 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9409B283B310D29B6FD6440A3463599C /* Pods-MHApp_starter-umbrella.h in Headers */,
+				8457ADA9594A9FBFE5A58F84593FC332 /* Pods-MHApp_starter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +456,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A61A031D87FA293F87D12AFEEAD385CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */,
+				0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */,
+				58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */,
+				4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */,
+				C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */,
+				DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */,
+				52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */,
+				6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */,
+				1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */,
+				0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */,
+				919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */,
+				0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */,
+				BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */,
+				C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */,
+				0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */,
+				4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */,
+				91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1747C1FC0D7AED6F717CE32ACF418CF5 /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				A61A031D87FA293F87D12AFEEAD385CC /* Headers */,
+				7CA9E2A18C014A20CD8A14FD9AFD84EB /* Sources */,
+				B93B0F6F7A24587A13A4DC4628DF35C0 /* Frameworks */,
+				F55CA98E8C93B232101DADF83D8625F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 911E8CAE5BC7C27912E3245FC75091FA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
@@ -330,17 +521,18 @@
 		};
 		CA561AAB6F72F4E21F11C9A7BB892ECA /* Pods-MHApp_starter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 934E8E0CC5EF540761E5E21496E62339 /* Build configuration list for PBXNativeTarget "Pods-MHApp_starter" */;
+			buildConfigurationList = D1E0FD7C0272CCFC8924394AD794B3B6 /* Build configuration list for PBXNativeTarget "Pods-MHApp_starter" */;
 			buildPhases = (
-				131FE874AE59F38BBB12FA9364862C14 /* Headers */,
-				97D9C4845ABAB08BC49E0C167C6B4F38 /* Sources */,
-				CEDB157BBF1D77E13624EDD1984ED44C /* Frameworks */,
-				939A84A1201F4D69AE37438388809E70 /* Resources */,
+				5A11DF0B4E52A4743171887A510C1816 /* Headers */,
+				661DDEFB3A796D67B875D0516BEA9E64 /* Sources */,
+				6FDE03FC17ACDDDA7B554BDDFDA1F2CB /* Frameworks */,
+				FBD8EB80BE77D588CBF7A5A34A2C8C42 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38967CBB7119A7A18C49918735098965 /* PBXTargetDependency */,
+				693E55F8FE0E7120AF343B0A29D8ECD3 /* PBXTargetDependency */,
+				356A9336E996D019AB1D703A3D4EC9E0 /* PBXTargetDependency */,
 			);
 			name = "Pods-MHApp_starter";
 			productName = "Pods-MHApp_starter";
@@ -357,7 +549,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -365,11 +557,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BDC0FD07C651DC9D0B3684D11CF0F195 /* Products */;
+			productRefGroup = FF09E858F9E1D758E9146C0F28BC41D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */,
+				13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */,
 				CA561AAB6F72F4E21F11C9A7BB892ECA /* Pods-MHApp_starter */,
 			);
 		};
@@ -383,7 +576,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		939A84A1201F4D69AE37438388809E70 /* Resources */ = {
+		F55CA98E8C93B232101DADF83D8625F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD8EB80BE77D588CBF7A5A34A2C8C42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,11 +593,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		97D9C4845ABAB08BC49E0C167C6B4F38 /* Sources */ = {
+		661DDEFB3A796D67B875D0516BEA9E64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDCC8F6DEF85766C8B6A17635689CC6 /* Pods-MHApp_starter-dummy.m in Sources */,
+				D9B57EE74DF36F96E3E0A95736AF35A9 /* Pods-MHApp_starter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA9E2A18C014A20CD8A14FD9AFD84EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */,
+				7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */,
+				8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */,
+				FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */,
+				4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */,
+				E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */,
+				487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */,
+				2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */,
+				083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */,
+				48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */,
+				1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */,
+				FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */,
+				0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */,
+				D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */,
+				3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,18 +648,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38967CBB7119A7A18C49918735098965 /* PBXTargetDependency */ = {
+		356A9336E996D019AB1D703A3D4EC9E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */;
+			targetProxy = 7B3619CD02250BD665A8D2519AF3038A /* PBXContainerItemProxy */;
+		};
+		693E55F8FE0E7120AF343B0A29D8ECD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = 28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */;
-			targetProxy = C8246133D28EC22591D1D28C4F5B85A2 /* PBXContainerItemProxy */;
+			targetProxy = 66B9BC79E081B9F842C4CEE99A33B06F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		095A19A83BDB4FB675046201EB1C84DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17499AC1500D6348ED404F10919A6685 /* ChameleonFramework.debug.xcconfig */;
+			baseConfigurationReference = 65997473764D7C333924EF9889B31CEA /* ChameleonFramework.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -536,7 +765,7 @@
 		};
 		27B43CA4DEC2C6506C51E8BF2300624C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11ACFBC64C0823BEB9E43C5D312B0B21 /* ChameleonFramework.release.xcconfig */;
+			baseConfigurationReference = DE27B84427A50DD975C48183460F7518 /* ChameleonFramework.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -569,9 +798,9 @@
 			};
 			name = Release;
 		};
-		38FC1CCACC8114F95FCB6D9A8C052D9B /* Release */ = {
+		55DA0B4665F7C463D04A310FFDE0EC65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC399E24AFD16F9E3B03BE2C54E72B05 /* Pods-MHApp_starter.release.xcconfig */;
+			baseConfigurationReference = D68E9B8E496816C4522CD12870DE19BE /* Pods-MHApp_starter.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -601,11 +830,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		92A3E9AC052A7345115439021B218E3B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -669,9 +897,9 @@
 			};
 			name = Release;
 		};
-		E02815CADC47E68E0440096D2AC54941 /* Debug */ = {
+		B3D74B93CA0F8354B05FFF7B48A65B3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D68E9B8E496816C4522CD12870DE19BE /* Pods-MHApp_starter.debug.xcconfig */;
+			baseConfigurationReference = DC399E24AFD16F9E3B03BE2C54E72B05 /* Pods-MHApp_starter.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -701,14 +929,93 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9D8A777643BBEC6139AA8A963349D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C309A2863839102B500441F7F525FA55 /* FSCalendar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/FSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		C9FE9FE12E4D706F3987DC0AFBD314FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F76D74F0E9BC09BDA72639ADE571025 /* FSCalendar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/FSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1747C1FC0D7AED6F717CE32ACF418CF5 /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D8A777643BBEC6139AA8A963349D4C /* Debug */,
+				C9FE9FE12E4D706F3987DC0AFBD314FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -727,11 +1034,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		934E8E0CC5EF540761E5E21496E62339 /* Build configuration list for PBXNativeTarget "Pods-MHApp_starter" */ = {
+		D1E0FD7C0272CCFC8924394AD794B3B6 /* Build configuration list for PBXNativeTarget "Pods-MHApp_starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E02815CADC47E68E0440096D2AC54941 /* Debug */,
-				38FC1CCACC8114F95FCB6D9A8C052D9B /* Release */,
+				55DA0B4665F7C463D04A310FFDE0EC65 /* Debug */,
+				B3D74B93CA0F8354B05FFF7B48A65B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C323CECF25EAED5500CA62F3 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CECE25EAED5500CA62F3 /* DateExtention.swift */; };
+		C3684275261EC12700AC6172 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3684274261EC12700AC6172 /* Gradient.swift */; };
 		C3A2A8E1261D7F0D00EA1C9A /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */; };
 		C3F40C0D261D67900060B7D1 /* popUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */; };
 		C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */; };
@@ -19,7 +20,6 @@
 		C54C1C7825E71101008EDC59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C7725E71101008EDC59 /* HomeViewController.swift */; };
 		C54C1C7E25E71149008EDC59 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */; };
 		C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */; };
-		C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */; };
 		C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8725E71300008EDC59 /* CalendarViewController.swift */; };
 		EE9E4AE93BBD6B2B66CD0B1A /* Pods_MHApp_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C575EB10A36EECC37DCA3B /* Pods_MHApp_starter.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		66E683FE1C7A1871EE8B1556 /* Pods-MHApp_starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHApp_starter.debug.xcconfig"; path = "Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter.debug.xcconfig"; sourceTree = "<group>"; };
 		C323CECE25EAED5500CA62F3 /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
+		C3684274261EC12700AC6172 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpScreenViewController.swift; sourceTree = "<group>"; };
 		C54C1C5C25E6F572008EDC59 /* MHApp_starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHApp_starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +41,6 @@
 		C54C1C7725E71101008EDC59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
-		C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		C54C1C8725E71300008EDC59 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D7C575EB10A36EECC37DCA3B /* Pods_MHApp_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHApp_starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D8ACC99FB1ED186344D429 /* Pods-MHApp_starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHApp_starter.release.xcconfig"; path = "Target Support Files/Pods-MHApp_starter/Pods-MHApp_starter.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,9 +69,44 @@
 		C323CED125EAF2FE00CA62F3 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */,
 				C323CECE25EAED5500CA62F3 /* DateExtention.swift */,
+				C3684274261EC12700AC6172 /* Gradient.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C368425A261EBB5400AC6172 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */,
+				C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		C368425C261EBB6600AC6172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C54C1C7725E71101008EDC59 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C368425E261EBB6E00AC6172 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C54C1C8725E71300008EDC59 /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		C3684261261EBB8D00AC6172 /* Announcements */ = {
+			isa = PBXGroup;
+			children = (
+				C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */,
+			);
+			path = Announcements;
 			sourceTree = "<group>";
 		};
 		C54C1C5325E6F572008EDC59 = {
@@ -98,14 +133,10 @@
 				C54C1C5F25E6F572008EDC59 /* AppDelegate.swift */,
 				C54C1C6125E6F572008EDC59 /* SceneDelegate.swift */,
 				C54C1C6525E6F572008EDC59 /* Main.storyboard */,
-				C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */,
-				C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */,
-				C54C1C7725E71101008EDC59 /* HomeViewController.swift */,
-				95A9A8D326042719008433DD /* NSAttributedStringExtension.swift */,
-				C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */,
-				C54C1C8725E71300008EDC59 /* CalendarViewController.swift */,
-				C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */,
-				C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */,
+				C368425A261EBB5400AC6172 /* Teams */,
+				C368425C261EBB6600AC6172 /* Home */,
+				C368425E261EBB6E00AC6172 /* Calendar */,
+				C3684261261EBB8D00AC6172 /* Announcements */,
 				C54C1C6B25E6F573008EDC59 /* Assets.xcassets */,
 				C54C1C6D25E6F573008EDC59 /* LaunchScreen.storyboard */,
 				C54C1C7025E6F573008EDC59 /* Info.plist */,
@@ -242,11 +273,11 @@
 				C54C1C6A25E6F572008EDC59 /* MHApp_starter.xcdatamodeld in Sources */,
 				C323CECF25EAED5500CA62F3 /* DateExtention.swift in Sources */,
 				C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */,
-				C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */,
 				C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */,
 				C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */,
 				C3A2A8E1261D7F0D00EA1C9A /* NSAttributedString.swift in Sources */,
 				C3F40C0D261D67900060B7D1 /* popUpScreenViewController.swift in Sources */,
+				C3684275261EC12700AC6172 /* Gradient.swift in Sources */,
 				C54C1C7E25E71149008EDC59 /* TeamsViewController.swift in Sources */,
 				C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */,
 			);

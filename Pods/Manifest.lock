@@ -2,9 +2,15 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
+  - FSCalendar (2.8.2)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - FSCalendar
+
+SPEC REPOS:
+  trunk:
+    - FSCalendar
 
 EXTERNAL SOURCES:
   ChameleonFramework:
@@ -17,7 +23,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
 
-PODFILE CHECKSUM: 97f25e3bf315b88be2434236302d608dadfbf377
+PODFILE CHECKSUM: 803e515a81073679da2fbed416dfbdfc44ef7ff8
 
 COCOAPODS: 1.10.0

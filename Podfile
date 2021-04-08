@@ -8,4 +8,6 @@ target 'MHApp_starter' do
   # Pods for MHApp_starter
 
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'FSCalendar'
+
 end
