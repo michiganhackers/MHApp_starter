@@ -101,6 +101,7 @@
 				C3A2A8E0261D7F0D00EA1C9A /* NSAttributedString.swift */,
 				C3F40C0C261D67900060B7D1 /* popUpScreenViewController.swift */,
 				C54C1C7725E71101008EDC59 /* HomeViewController.swift */,
+				95A9A8D326042719008433DD /* NSAttributedStringExtension.swift */,
 				C54C1C7D25E71149008EDC59 /* TeamsViewController.swift */,
 				C54C1C8725E71300008EDC59 /* CalendarViewController.swift */,
 				C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */,

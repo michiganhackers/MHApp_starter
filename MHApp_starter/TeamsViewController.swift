@@ -43,7 +43,6 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         
-        
     }
     
     
