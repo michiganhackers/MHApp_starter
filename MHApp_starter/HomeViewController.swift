@@ -21,12 +21,37 @@ class HomeViewController: UIViewController {
     // referencable variable for the HomeViewController class
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var zoomLink: UILabel!
+    @IBOutlet weak var homeImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         /* TODO: This is here you can put code (preferably in helper methods) that will get called
                  when the home screen is about to be displayed.
         */
+        
+        homeImage.image = UIImage(named: "Image")
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.onClickLabel(sender:)))
+        
+        zoomLink.isUserInteractionEnabled = true
+            zoomLink .addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func onClickLabel(sender:UITapGestureRecognizer){
+        openUrl(urlString: "https://umich.zoom.us/j/96226095202")
+    }
+    
+    func openUrl(urlString:String!){
+        let url = URL(string: urlString)!
+        if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         
     }
     
