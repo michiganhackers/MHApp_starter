@@ -18,6 +18,11 @@
 		C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */; };
 		C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */; };
 		C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C1C8725E71300008EDC59 /* CalendarViewController.swift */; };
+		E004DC4D261F812800EABB5E /* extraCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E004DC4C261F812800EABB5E /* extraCalendarViewController.swift */; };
+		E0E78E11260D5A2900AE120F /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E78E10260D5A2900AE120F /* WeekdaysView.swift */; };
+		E0E78E14260D5A4A00AE120F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E78E13260D5A4A00AE120F /* CalendarView.swift */; };
+		E0E78E17260D5A6600AE120F /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E78E16260D5A6600AE120F /* MonthView.swift */; };
+		E0FE0F5C261544030020D451 /* dayEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE0F5B261544030020D451 /* dayEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		C54C1C8025E71168008EDC59 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		C54C1C8325E71195008EDC59 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		C54C1C8725E71300008EDC59 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E004DC4C261F812800EABB5E /* extraCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extraCalendarViewController.swift; sourceTree = "<group>"; };
+		E0E78E10260D5A2900AE120F /* WeekdaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
+		E0E78E13260D5A4A00AE120F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E0E78E16260D5A6600AE120F /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		E0FE0F5B261544030020D451 /* dayEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 				C54C1C6D25E6F573008EDC59 /* LaunchScreen.storyboard */,
 				C54C1C7025E6F573008EDC59 /* Info.plist */,
 				C54C1C6825E6F572008EDC59 /* MHApp_starter.xcdatamodeld */,
+				E0E78E10260D5A2900AE120F /* WeekdaysView.swift */,
+				E0E78E13260D5A4A00AE120F /* CalendarView.swift */,
+				E0E78E16260D5A6600AE120F /* MonthView.swift */,
+				E0FE0F5B261544030020D451 /* dayEvents.swift */,
+				E004DC4C261F812800EABB5E /* extraCalendarViewController.swift */,
 			);
 			path = MHApp_starter;
 			sourceTree = "<group>";
@@ -152,11 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E78E17260D5A6600AE120F /* MonthView.swift in Sources */,
+				E0E78E14260D5A4A00AE120F /* CalendarView.swift in Sources */,
 				C54C1C7825E71101008EDC59 /* HomeViewController.swift in Sources */,
+				E0E78E11260D5A2900AE120F /* WeekdaysView.swift in Sources */,
 				C54C1C6A25E6F572008EDC59 /* MHApp_starter.xcdatamodeld in Sources */,
+				E0FE0F5C261544030020D451 /* dayEvents.swift in Sources */,
 				C54C1C8125E71168008EDC59 /* AnnouncementsViewController.swift in Sources */,
 				C54C1C8425E71195008EDC59 /* ChallengesViewController.swift in Sources */,
 				C54C1C6025E6F572008EDC59 /* AppDelegate.swift in Sources */,
+				E004DC4D261F812800EABB5E /* extraCalendarViewController.swift in Sources */,
 				C54C1C8825E71300008EDC59 /* CalendarViewController.swift in Sources */,
 				C54C1C7E25E71149008EDC59 /* TeamsViewController.swift in Sources */,
 				C54C1C6225E6F572008EDC59 /* SceneDelegate.swift in Sources */,

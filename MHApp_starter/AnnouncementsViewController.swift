@@ -30,15 +30,27 @@
  */
 
 import UIKit
+import WebKit
 
-class AnnouncementsViewController: UIViewController {
+class AnnouncementsViewController: UIViewController, WKNavigationDelegate {
 
+    
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        webView.navigationDelegate = self
         // Do any additional setup after loading the view.
+        let url = URL(string: "https://michiganhackers.github.io/mh-ios-app-backend/announcements/2021-02-21")!
+        let request = URLRequest(url: url)
+        webView.load(request)
     }
     
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        print("Navigation Happened")
+        decisionHandler(.allow)
+    }
 
     /*
     // MARK: - Navigation
