@@ -62,7 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="XDm-dU-NLZ"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar.circle.fill" catalog="system" selectedImage="calendar.circle" id="XDm-dU-NLZ"/>
                     <connections>
                         <outlet property="tableView" destination="vBb-DX-BS9" id="VFx-ZM-Fie"/>
                         <outlet property="titleLabel" destination="hX5-3N-gjk" id="Pe8-4K-7x4"/>
@@ -202,7 +202,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="De5-Wh-v31">
-                                                    <rect key="frame" x="107" y="30" width="307" height="51"/>
+                                                    <rect key="frame" x="107" y="30" width="307" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="279" id="rTg-8g-FLn"/>
                                                         <constraint firstAttribute="height" constant="51" id="zh8-vE-JOH"/>
@@ -255,7 +255,7 @@
                             <constraint firstItem="YhL-nd-w1o" firstAttribute="leading" secondItem="JQW-Th-vpy" secondAttribute="leadingMargin" id="fyu-Z1-8xg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Teams" id="854-PE-pcP"/>
+                    <tabBarItem key="tabBarItem" title="Teams" image="person.fill" catalog="system" selectedImage="person" id="854-PE-pcP"/>
                     <connections>
                         <outlet property="tableView" destination="wiB-PZ-rS6" id="uAs-Xb-00q"/>
                         <outlet property="titleLabel" destination="YhL-nd-w1o" id="6zL-rk-rLC"/>
@@ -284,7 +284,7 @@
                         <viewLayoutGuide key="safeArea" id="dLs-vP-mu9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="fl8-QD-4fa"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house" id="fl8-QD-4fa"/>
                     <connections>
                         <outlet property="titleLabel" destination="hw4-5G-Glu" id="15t-mc-ZxM"/>
                     </connections>
@@ -321,7 +321,7 @@
                         <viewLayoutGuide key="safeArea" id="bFL-eR-R7l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Announcements" id="6BD-p6-Ldv"/>
+                    <tabBarItem key="tabBarItem" title="Announcements" image="megaphone.fill" catalog="system" selectedImage="megaphone" id="6BD-p6-Ldv"/>
                     <connections>
                         <outlet property="webView" destination="XQV-I4-UB8" id="CJd-dl-bJl"/>
                     </connections>
@@ -332,6 +332,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="megaphone" catalog="system" width="128" height="111"/>
+        <image name="megaphone.fill" catalog="system" width="128" height="114"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

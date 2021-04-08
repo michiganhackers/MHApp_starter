@@ -32,25 +32,71 @@
 import UIKit
 import WebKit
 
-class AnnouncementsViewController: UIViewController, WKNavigationDelegate {
+extension URL {
+    func isReachable(completion: @escaping (Bool) -> ()) {
+        var request = URLRequest(url: self)
+        request.httpMethod = "HEAD"
+        URLSession.shared.dataTask(with: request) { _, response, _ in
+            completion((response as? HTTPURLResponse)?.statusCode == 200)
+        }.resume()
+    }
+}
 
-    
+class AnnouncementsViewController: UIViewController, WKUIDelegate {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
     @IBOutlet weak var webView: WKWebView!
+    
+    func getSunday(myDate: Date) -> Date {
+        let cal = Calendar.current
+        var comps = cal.dateComponents([.weekOfYear, .yearForWeekOfYear], from: myDate)
+        comps.weekday=1
+        let sundayInWeek = cal.date(from: comps)!
+        return sundayInWeek
+    }
+    
+//    @IBOutlet weak var myButton: UIButton!
+//
+//    @IBAction func buttonPressed(_ sender: UIButton) {
+//        let string = "https://google.com"
+//        let myURL = URL(string:string)
+//        let myRequest = URLRequest(url: myURL!)
+//        webView.load(myRequest)
+//    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        let now = Date()
+        let sunday = getSunday(myDate: now)
+        print(sunday)
+        print(df.string(from: sunday))
+        let lastweek = Calendar.current.date(byAdding: .weekOfYear, value: -1, to: sunday)!
+        print(df.string(from: lastweek))
+        var string = "https://michiganhackers.github.io/mh-ios-app-backend/announcements/"
+        string = string + df.string(from: sunday)
+        print(string)
+        let url1 = URL(string: string)!
+        url1.isReachable { success in
+            if success {
+                print("url1 is reachable")  // url1 is reachable
+            } else {
+                string = "https://michiganhackers.github.io/mh-ios-app-backend/announcements/"
+                string = string + df.string(from: lastweek)
+                let myURL = URL(string:string)
+                let myRequest = URLRequest(url: myURL!)
+                self.webView.load(myRequest)
+                print("url1 is unreachable")
+            }
+        }
+    }
 
-        webView.navigationDelegate = self
-        // Do any additional setup after loading the view.
-        let url = URL(string: "https://michiganhackers.github.io/mh-ios-app-backend/announcements/2021-02-21")!
-        let request = URLRequest(url: url)
-        webView.load(request)
-    }
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        print("Navigation Happened")
-        decisionHandler(.allow)
-    }
 
     /*
     // MARK: - Navigation
