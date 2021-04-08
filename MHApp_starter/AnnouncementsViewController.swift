@@ -30,14 +30,82 @@
  */
 
 import UIKit
+import WebKit
+import SwiftUI
+import Foundation
 
 class AnnouncementsViewController: UIViewController {
+    
+    @IBOutlet weak var webView: WKWebView!
 
+    func createFormatter() -> String {
+        var components = DateComponents()
+        let date = Date()
+        let cal = Calendar.current
+        let weekdayIndex = cal.component(.weekday, from: date)
+        let year = cal.component(.year, from: date)
+        let month = cal.component(.month, from: date)
+        var day = cal.component(.day, from: date)
+        
+        //if let weekdayName = DateFormatter().weekdaySymbols?[ weekdayIndex - 1] {
+            //print(weekdayIndex)
+        //print(weekdayIndex)
+            if(weekdayIndex == 2) {
+                day = day - 1
+            }
+            else if(weekdayIndex == 3) {
+                day = day - 2
+            }
+            else if(weekdayIndex == 4) {
+                day = day - 3
+            }
+            else if(weekdayIndex == 5) {
+                day = day - 4
+            }
+            else if(weekdayIndex == 6) {
+                day = day - 5
+            }
+            else if(weekdayIndex == 7) {
+                day = day - 6
+            }
+            else if(weekdayIndex == 0) {
+                day = day + 1
+            }
+        
+        components.day = day
+        components.month = month
+        components.year = year
+                
+        let realDate: Date? = cal.date(from: components)
+       // }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone.ReferenceType.local
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date_string = dateFormatter.string(from: realDate ?? date)
+        //print(date_string)
+        return date_string
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        let url = URL(string: "https://michiganhackers.github.io/mh-ios-app-backend/announcements/" + createFormatter())!
+        
+        
+        let request = URLRequest(url: url)
+        
+        webView.load(request)
+        
+        
         // Do any additional setup after loading the view.
+        
+        
+        
     }
+
     
 
     /*
@@ -51,3 +119,4 @@ class AnnouncementsViewController: UIViewController {
     */
 
 }
+
